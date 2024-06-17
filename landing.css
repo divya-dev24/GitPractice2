@@ -73,11 +73,6 @@ a:any-link {
     align-items: center;
     padding-top: 1rem;
     margin-bottom: 2rem;
-    position: fixed !important;
-    top: 0 !important;
-    left: 1rem;
-    right: 1rem;
-    z-index: 1;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -87,7 +82,7 @@ a:any-link {
     font-weight: bold;
     font-size: medium;
     padding-bottom: 1rem;
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero {
