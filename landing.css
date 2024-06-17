@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: whitesmoke;
+}
+
+body {
+    max-width: 100vw; 
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* UTILITY */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* BANNER SECTION */
+
+.banner {
+    background-color: #87a5e4;
+    width: 100vw;  
+}
+
+#header, .hero {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-img {
+    max-width: 3rem;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+
+
+#header {
+    background-color: #87a5e4;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    position: fixed !important;
+    top: 0 !important;
+    left: 1rem;
+    right: 1rem;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-link {
+    padding-inline: 1rem;
+    font-weight: bold;
+    font-size: medium;
+    padding-bottom: 1rem;
+    font-family: "Poppins", sans-serif;;
+}
+
+.hero {
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: space-around;
+    padding-top: 6rem;
+}
+
+.hero-text h1 {
+    margin-block: 15px;
+}
+
+.hero-text p {
+    margin-block: 15px;
+}
+
+.learn-more {
+    font-size: 1rem;
+    padding-inline: 15px;
+    padding-block: 5px;
+    background-color: antiquewhite;
+    border-color: bisque;
+    box-shadow: 0 0 5px rgb(75, 74, 72);
+    border-radius: 15px;
+}
+
+#hero-image {
+    max-width: 100%;
+    align-self: center;
+}
+
+@media screen and (max-width: 490px) {
+    #header {
+        justify-content: space-around;
+    }
+    
+    #header-img {
+        max-width: 100%;
+        height: 3rem;
+        padding: 0;
+        padding-inline: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-link {
+        font-size: small;
+        align-self: center;
+        padding: 0;
+        padding-inline: 0.7rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* FEATURES SECTION */
+
+#features {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-block: 1rem;
+    justify-content: space-around;
+}
+
+.feature-text h3 {
+    color: rgb(235, 168, 81);
+    padding: 0;
+    padding-block: 15px;
+}
+
+.feature-text h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.feature-text h2 {
+    padding-block: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.feature-text p {
+    padding-bottom: 0.7rem;
+}
+
+.feature-text hr {
+    border: 1px solid #423E3B;
+}
+
+.feature-video {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* GET STARTED SECTION */
+
+#form {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-block: 10px;
+    display: block;
+}
+
+#email {
+    padding-inline: 15px;
+    padding-block: 5px;
+    border-radius: 7px;
+    border-color: bisque;
+    box-shadow: 0 0 5px rgb(75, 74, 72);
+    margin-block: 15px;
+    width: fit-content;
+    
+}
+
+#submit {
+    padding-inline: 15px;
+    padding-block: 5px;
+    background-color: antiquewhite;
+    border-color: bisque;
+    box-shadow: 0 0 5px rgb(75, 74, 72);
+    border-radius: 7px;
+    margin-left: 15px;
+}
+
+/* FOOTER */
+
+#contact {
+    background-color: #C5D1EB;
+    width: 100vw;
+    height: 4rem;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact div {
+    padding-inline: 2.5rem;
+}
+
+#contact i {
+    font-size: 1.2rem;
+}
